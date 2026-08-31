@@ -4,3 +4,10 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/*"
+  to = "https://an7logistica.com.br/:splat"
+  status = 301
+  force = true
+  conditions = { Host = ["asexpress.netlify.app"] }
