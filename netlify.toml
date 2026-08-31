@@ -5,6 +5,13 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# Netlify domain-level redirect: the source host must be part of `from`.
+[[redirects]]
+  from = "https://asexpress.netlify.app/*"
+  to = "https://an7logistica.com.br/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "https://an7logistica.com.br/:splat"
